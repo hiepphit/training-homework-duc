@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Document</title>
+      <link rel="stylesheet" href="./assets/css/style.css" />
+      <script src="https://cdn.tailwindcss.com"></script>
+   </head>
+   <body>
+      <div class="flex flex-col p-10 w-[1200px] mx-auto">
+         <h1 class="text-center uppercase font-bold text-4xl mb-4">Hóa đơn bán hàng</h1>
+         <div class="pb-6 border-b border-[#c2c3c3]">
+            <p>Ngày mua hàng: <span class="font-semibold order-date"></span></p>
+            <p>Số hóa đơn: <span class="font-semibold">PQT-230412</span></p>
+         </div>
+
+         <div class="py-6 border-b border-[#c2c3c3] user-info"></div>
+
+         <div class="mt-8">
+            <table class="border product-list"></table>
+         </div>
+
+         <div class="mt-6 flex justify-between px-32 pb-60">
+            <div class="text-center">
+               <p>Người mua hàng</p>
+               <p class="italic">(Ký và ghi rõ họ tên)</p>
+            </div>
+            <div class="text-center">
+               <p>Người bán hàng</p>
+               <p class="italic">(Ký và ghi rõ họ tên)</p>
+            </div>
+         </div>
+      </div>
+
+      <script src="./invoice.js"></script>
+   </body>
+</html>
